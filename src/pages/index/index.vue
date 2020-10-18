@@ -1,8 +1,14 @@
 <template>
   <view class="components-page">
-     <movable-area style='height: 200px; width: 200px; background: red;'>
-    <movable-view style='height: 50px; width: 50px; background: blue;' direction='all'>在路上</movable-view>
-  </movable-area>
+    <view>
+      <button @tap="navigateTo('/pages/detail/index')">去详情中心</button>
+    </view>
+    <movable-area style='height: 200px; width: 200px; background: red;'>
+      <movable-view
+        style='height: 50px; width: 50px; background: blue;'
+        direction='all'
+      >在路上</movable-view>
+    </movable-area>
     <swiper
       class='test-h'
       indicator-color='#999'
@@ -109,6 +115,7 @@
 </template>
 
 <script>
+import Taro from '@tarojs/taro'
 import "./index.scss";
 
 const order = ["demo1", "demo2", "demo3"];
@@ -132,6 +139,10 @@ export default {
     scroll(e) {
       console.log("scroll:", e);
     },
+
+    navigateTo(url) {
+      Taro.navigateTo({url:url})
+    }
   },
 };
 </script>
