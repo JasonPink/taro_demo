@@ -1,7 +1,7 @@
 export default {
   navigationBarBackgroundColor: "#ffffff",
   navigationBarTextStyle: "black",
-  navigationBarTitleText: "首页",
+  navigationBarTitleText: "英雄联盟",
   backgroundColor: "#eeeeee",
   backgroundTextStyle: "light"
 }
