@@ -1,0 +1,49 @@
+.person-container{
+  .header-wrap{
+    width: 100%;
+    height: 200px;
+    border-bottom: 20px solid #f7f7f7;
+  }
+  .order-wrap{
+    .title{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 24px;
+    }
+    .order-row{
+      height: 75px;
+      line-height: 75px;
+      border-bottom: 1px solid #f7f7f7;
+      margin: 0 30px;
+    }
+    .order-status{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 200px;
+      font-size: 24px;
+      .status-item{
+        width: 20%;
+        .cricle{
+          width: 95px;
+          height: 95px;
+          border-radius: 50%;
+          background: #f7f7f7;
+          margin: 10px auto;
+        }
+        .text{
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .link-item{
+      display: flex;
+      justify-content: space-between;
+      //align-items: center;
+      font-size: 24px;
+      color: #333;
+    }
+  }
+}
