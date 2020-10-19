@@ -5,6 +5,7 @@ export default {
     "pages/shopCart/index",
     "pages/mySelf/index",
     "pages/detail/index",
+    "pages/coupon/index",
   ],
   window: {
     backgroundTextStyle: "light",
