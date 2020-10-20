@@ -5,7 +5,8 @@
     </view>
     <view>
       <button @tap="navigateTo('/pages/detail/index')">去详情中心</button>
-      <AtIcon prefixClass='icon' value='youhuiquan' size='30' color='#F00'></AtIcon>
+      <view class="icon icon-youhuiquan">优惠券</view>
+      <!-- <AtIcon prefixClass='icon' value='youhuiquan' size='30' color='#F00'></AtIcon> -->
     </view>
   </view>
 </template>
