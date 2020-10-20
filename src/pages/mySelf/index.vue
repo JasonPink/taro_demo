@@ -31,7 +31,7 @@
         </view>
       </view>
       <view class="order-link">
-        <view class="link-item order-row" @tap="navigateTo('/pages/coupon/index')">
+        <view class="link-item order-row" @tap="navigateTo('/pages/coupon/index?name=yemeng&age=24')">
           <view class="left">
             <icon class="icon-box-img" type="success" size="20"></icon>
             <text>优惠券</text>
@@ -118,6 +118,12 @@ import "./mySelf.scss";
 import Taro from '@tarojs/taro'
 
 export default {
+  mounted() {
+    Taro.setStorage({
+      key:"key",
+      data:[1,2,3]
+    })
+  },
   methods: {
     navigateTo(url) {
       Taro.navigateTo({url:url})
